@@ -2,8 +2,11 @@
   "name": "is-touch-device",
   "version": "0.0.0",
   "description": "Is the current JS environment a touch device?",
-  "main": "index.js",
+  "main": "build",
   "scripts": {
+    "clean": "rimraf build && mkdirp src",
+    "prebuild": "npm run clean",
+    "build": "babel src --out-dir build",
     "prelint": "editorconfig-tools check *",
     "lint": "eslint .",
     "tests-only": "echo \"Error: no test specified\" && exit 1",
@@ -30,9 +33,14 @@
   },
   "homepage": "https://github.com/airbnb/is-touch-device#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-airbnb": "^2.2.3",
     "editorconfig-tools": "^0.1.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0"
+    "eslint-plugin-import": "^2.3.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.1"
   }
 }
