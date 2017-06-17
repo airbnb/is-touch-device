@@ -4,6 +4,7 @@
   "description": "Is the current JS environment a touch device?",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/airbnb/is-touch-device/issues"
   },
-  "homepage": "https://github.com/airbnb/is-touch-device#readme"
+  "homepage": "https://github.com/airbnb/is-touch-device#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  }
 }
