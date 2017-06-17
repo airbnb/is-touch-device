@@ -4,6 +4,7 @@
   "description": "Is the current JS environment a touch device?",
   "main": "build",
   "scripts": {
+    "prepublish": "safe-publish-latest && (not-in-publish || npm run build)",
     "clean": "rimraf build && mkdirp src",
     "prebuild": "npm run clean",
     "build": "babel src --out-dir build",
@@ -45,11 +46,13 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
+    "in-publish": "^2.0.0",
     "mkdirp": "^0.5.1",
     "mocha": "^3.4.2",
     "mocha-wrap": "^2.1.1",
     "nyc": "^10.3.2",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "safe-publish-latest": "^1.1.1"
   },
   "contributors": [
     {
