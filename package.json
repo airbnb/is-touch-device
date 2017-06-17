@@ -7,7 +7,7 @@
     "clean": "rimraf build && mkdirp src",
     "prebuild": "npm run clean",
     "build": "babel src --out-dir build",
-    "prelint": "editorconfig-tools check *",
+    "prelint": "editorconfig-tools check * src/* test/*",
     "lint": "eslint .",
     "tests-only": "echo \"Error: no test specified\" && exit 1",
     "pretest": "npm run lint",
