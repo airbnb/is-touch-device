@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import wrap from 'mocha-wrap';
 
-import isTouchDevice from '../../src/utils/isTouchDevice';
+import isTouchDevice from '../src';
 
 const describeIfNoWindow = typeof window === 'undefined' ? describe : describe.skip;
 function DocumentTouch() { }
