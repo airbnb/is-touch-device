@@ -50,5 +50,21 @@
     "mocha-wrap": "^2.1.1",
     "nyc": "^10.3.2",
     "rimraf": "^2.6.1"
-  }
+  },
+  "contributors": [
+    {
+      "name": "Jordan Harband",
+      "email": "ljharb@gmail.com",
+      "url": "https://github.com/ljharb"
+    },
+    {
+      "name": "Maja Wichrowska",
+      "email": "maja.wichrowska@airbnb.com"
+    },
+    {
+      "name": "Victor",
+      "email": "victor@turo.com",
+      "url": "https://github.com/tagoro9"
+    }
+  ]
 }
