@@ -9,6 +9,9 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 120
 
+[*.md]
+max_line_length = off
+
 [*.json]
 max_line_length = off
 
