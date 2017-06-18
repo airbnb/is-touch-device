@@ -1,6 +1,6 @@
 {
   "name": "is-touch-device",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Is the current JS environment a touch device?",
   "main": "build",
   "scripts": {
